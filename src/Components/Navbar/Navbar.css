@@ -1,6 +1,6 @@
 :root {
-  --PrimaryColor: hsl(199, 100%, 33%);
-  --SecondaryColor: hsl(187, 85%, 43%);
+  --PrimaryColor: #0073a8;
+  --SecondaryColor: #10b5cb;
   --gradientColor: linear-gradient(
     to right,
     hsl(187, 85%, 43%),
