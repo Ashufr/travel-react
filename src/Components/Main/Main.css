@@ -1,0 +1,150 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+.main .sec-title .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--textColor);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .section-content {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .section-content .single-dest {
+  padding: 1rem;
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  background: var(--cardBG);
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.55);
+  overflow: hidden;
+}
+.main .section-content .single-dest:hover {
+  background: var(--cardHover);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.55);
+}
+.main .section-content .single-dest .img-div {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .section-content .single-dest .img-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s ease;
+}
+.main .section-content .single-dest .img-div img:hover {
+  transform: scale(1.1);
+}
+.main .section-content .single-dest .card-info {
+  padding: 1rem;
+}
+.main .section-content .single-dest .card-info .dest-title {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+}
+.main .section-content .single-dest .card-info .continent {
+  gap: 0.4rem;
+}
+.main .section-content .single-dest .card-info .continent .icon {
+  color: var(--textColor);
+  font-size: 1rem;
+}
+.main .section-content .single-dest .card-info .continent .name {
+  color: var(--textColor);
+  font-weight: 400;
+}
+.main .section-content .single-dest .card-info .fees {
+  width: 100%;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-top: 1.5px solid var(--textColor);
+  border-bottom: 1.5px solid var(--textColor);
+}
+.main .section-content .single-dest .card-info .fees .grade {
+  color: var(--textColor);
+  max-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .section-content .single-dest .card-info .fees .grade small {
+  background: var(--gradientColor);
+  padding: 1px 10px;
+  border-radius: 1rem;
+  text-align: center;
+  color: var(--whiteColor);
+  font-size: 10px;
+}
+.main .section-content .single-dest .card-info .fees .price {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+.main .section-content .single-dest .card-info .desc {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.main .section-content .single-dest .card-info .btn {
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.main .section-content .single-dest .card-info .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 560px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px;
+  }
+  .section-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px;
+  }
+  .section-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=Main.css.map */
